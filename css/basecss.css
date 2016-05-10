@@ -1,0 +1,61 @@
+ 
+BODY{
+  font-size : medium;
+  font-weight : normal;
+  font-style : normal;
+  font-variant : normal;
+  color            : black;
+  background-color : #f8fefc;
+  text-decoration : none;
+  line-height : normal;
+  word-spacing : normal;
+  letter-spacing : normal;
+  vertical-align : baseline;
+  margin-top : 10px;
+  margin-left : 10px;
+  margin-right : 10px;
+  margin-bottom : 10px;
+  border-width : medium medium medium medium;
+}
+
+A:link {color: blue;}
+A:visited {color: purple;}
+A:active {color: navy;}
+A:hover {color: red;}
+
+div.header {
+	width: 100%;
+}
+div.sidebar {
+	float: left;
+	width: 200px;
+}
+div.contents {
+	margin-left:200px;
+}
+div.footer {
+	clear: both;
+	width: 100%;
+}
+
+.center {
+	text-align: center;
+}
+.title {
+	font-size : x-large;
+	color : #008000;
+}
+.subtitle {
+	font-size : large;
+}
+.note {
+	font-size : x-small;
+}
+.miss {
+	font-size : x-small;
+	color : #529a88;
+}
+td.banner {
+	background-color : silver;
+	text-align: center;
+}

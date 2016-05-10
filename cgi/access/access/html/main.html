@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link rel="start" href="return_data" title="return" />
+	<link rel="stylesheet" type="text/css" title="access cgi" href="main.css" media="screen, print" />
+	<title>head_data</title>
+</head>
+<body>
+
+<form action="cgi_data" method="post">
+
+<div id="top">
+<input type="hidden" name="pass" value="master_pass" />
+<table border="1" cellpadding="5" cellspacing="0" summary="select">
+<tr>
+<td>
+<select name="logdir">
+
+<!-- logdir_html -->
+
+</select>
+</td>
+<td><input type="submit" value="個別情報表示" tabindex="1" class="select" /></td>
+<td><input type="submit" name="list" value="解析集計表示" tabindex="2" class="select" /></td>
+<td><input type="submit" name="hour" value="時間帯別表示" tabindex="3" class="select" /></td>
+<td><input type="submit" name="data" value="月別集計表示" tabindex="4" class="select" /></td>
+<td valign="bottom" id="return">[ <a href="return_data" title="return_data">return</a> ]</td>
+</tr>
+</table>
+</div>
+
+</form>
+
+<hr class="cutoff" />
+
+<h1>title_data &lt;site_data&gt;</h1>
+
+<!-- main_start -->
+
+<p id="notice">
+<em>site_data</em> へのアクセスは、これまでに <em>counter_data</em> 件ありました。<br />
+以下の解析データは、直近 <em>count_data</em> 件分 [ old_data ～ new_data ] です。<br />
+</p>
+
+<form action="cgi_data" method="post">
+<div>
+<input type="hidden" name="pass" value="master_pass" />
+<input type="hidden" name="logdir" value="logdir_data" />
+<table border="1" cellpadding="5" cellspacing="2" summary="reload" id="reload">
+<tr>
+	<td><a href="#logdata" title="個別情報" tabindex="5">個別</a> <input type="text" name="log" size="5" value="log_view" tabindex="6" />
+	<input type="checkbox" name="do" /> doc
+	<input type="checkbox" name="ua" /> OS
+	<input type="checkbox" name="ip" /> IP
+	</td>
+	<td><a href="#refdata" title="リンク元情報" tabindex="7">リンク</a> <input type="text" name="ref" size="3" value="ref_view" tabindex="8" />
+	<input type="checkbox" name="rt" /> 置換
+	<input type="checkbox" name="jp" /> 転送
+	<input type="checkbox" name="se" /> 検索
+	</td>
+	<td><a href="#keydata" title="検索キーワード情報" tabindex="9">検索</a> <input type="text" name="key" size="3" value="key_view" tabindex="10" />
+	<input type="checkbox" name="keys" /> div
+	</td>
+	<td><a href="#docdata" title="参照ページ情報" tabindex="11">参照</a> <input type="text" name="doc" size="3" value="doc_view" tabindex="12" />
+	</td>
+	<td><input type="submit" value="表示更新" tabindex="13" class="submit" /></td>
+</tr>
+<tr>
+	<td colspan="4">検索文字 <input type="text" size="96" name="word" value="" tabindex="14" />
+	<input type="radio" name="mode" value="and" /> and
+	<input type="radio" name="mode" value="or" /> or
+	</td>
+	<td><input type="submit" value="検索実行" tabindex="15" class="submit" /></td>
+</tr>
+</table>
+</div>
+</form>
+
+<hr class="cutoff" />
+
+<form action="cgi_data" method="post">
+<h2 class="head" id="logdata"><a href="#top" title="page top" class="mark">■</a> 個別情報の表示 [ 直近 log_view件 ]</h2>
+
+<div>
+<input type="hidden" name="action" value="delete" />
+<input type="hidden" name="pass" value="master_pass" />
+<input type="hidden" name="logdir" value="logdir_data" />
+<table border="1" cellpadding="2" cellspacing="0" summary="log data">
+
+<tr>
+<th abbr="number">件目</th>
+<th abbr="time">時間</th>
+<th abbr="referer">リンク元</th>
+<th abbr="agent">USER AGENT</th>
+<th abbr="pixel">解像度</th>
+<th abbr="host">ホスト（IP）</th>
+<th abbr="delete"><input type="submit" value="削除" tabindex="16" class="submit" /></th>
+</tr>
+
+<!-- log_html -->
+
+</table>
+</div>
+</form>
+
+<hr class="rule" />
+
+<form action="cgi_data" method="post">
+<h2 class="head" id="refdata"><a href="#top" title="page top" class="mark">■</a> リンク元の取得情報 [ ref_view件以上 ]</h2>
+
+<div>
+<input type="hidden" name="action" value="dellink" />
+<input type="hidden" name="pass" value="master_pass" />
+<input type="hidden" name="logdir" value="logdir_data" />
+<input type="hidden" name="sepl" value="" />
+<table border="1" cellpadding="2" cellspacing="0" summary="link data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="referer">リンク元</th>
+<th abbr="graph">グラフ</th>
+<th abbr="delete"><input type="submit" value="削除" tabindex="17" class="submit" /></th>
+</tr>
+
+<!-- link_html -->
+
+</table>
+</div>
+</form>
+
+<form action="cgi_data" method="post">
+<div id="convert">
+<input type="hidden" name="action" value="convert" />
+<input type="hidden" name="pass" value="master_pass" />
+<input type="hidden" name="logdir" value="logdir_data" />
+<input type="hidden" name="sepl" value="" />
+書換前 URI ： <input type="text" name="before" size="90" value="" tabindex="18" /><br />
+書換後 URI ： <input type="text" name="after" size="90" value="" tabindex="19" />　<input type="submit" value="書換実行" tabindex="20" class="submit" />
+</div>
+</form>
+
+<hr class="rule" />
+
+<h2 class="head" id="keydata"><a href="#top" title="page top" class="mark">■</a> 検索キーワード情報 [ key_view件以上 ]</h2>
+
+<div>
+<table border="1" cellpadding="2" cellspacing="0" summary="keyword data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="keyword">検索キーワード</th>
+<th abbr="graph">グラフ</th>
+</tr>
+
+<!-- keyword_html -->
+
+</table>
+</div>
+
+<hr class="rule" />
+
+<h2 class="head" id="docdata"><a href="#top" title="page top" class="mark">■</a> 参照ページ情報 [ doc_view件以上 ]</h2>
+
+<div>
+<table border="1" cellpadding="2" cellspacing="0" summary="document data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="document">参照ページ</th>
+<th abbr="graph">グラフ</th>
+</tr>
+
+<!-- document_html -->
+
+</table>
+</div>
+
+<!-- main_end -->
+
+<!-- list_start -->
+
+<p id="notice">
+<em>site_data</em> へのアクセスは、これまでに <em>counter_data</em> 件ありました。<br />
+以下の解析データは、直近 <em>count_data</em> 件分 [ old_data ～ new_data ] です。<br />
+</p>
+
+<form action="cgi_data" method="post">
+<div>
+<input type="hidden" name="pass" value="master_pass" />
+<input type="hidden" name="logdir" value="logdir_data" />
+<input type="hidden" name="list" value="list" />
+<table border="1" cellpadding="5" cellspacing="2" summary="reload" id="reload">
+<tr>
+	<td><a href="#pixeldata" title="解像度情報" tabindex="5">解像度情報</a> <input type="text" name="pixel" size="3" value="pixel_view" tabindex="6" /></td>
+	<td><a href="#agentdata" title="ブラウザ情報" tabindex="7">ブラウザ情報</a> <input type="text" name="agent" size="3" value="agent_view" tabindex="8" />
+	<select name="uac">
+		<option class="uac" value="0">通常</option>
+		<option class="uac" value="1">通常 + OS</option>
+		<option class="uac" value="2">詳細</option>
+		<option class="uac" value="3">詳細 + OS</option>
+		<option class="uac" value="4">UserAgent</option>
+	</select>
+	<input type="checkbox" name="uao" /> 他
+	</td>
+	<td><a href="#osdata" title="OS情報" tabindex="9">OS情報</a> <input type="text" name="os" size="3" value="os_view" tabindex="10" />
+	<input type="checkbox" name="oso" /> 他
+	</td>
+	<td><a href="#hostdata" title="ホスト情報" tabindex="11">ホスト情報</a> <input type="text" name="host" size="3" value="host_view" tabindex="12" />
+	<input type="checkbox" name="ipc" /> IP
+	</td>
+	<td><input type="submit" value="表示更新" tabindex="13" class="submit" /></td>
+</tr>
+<tr>
+	<td colspan="4">検索文字 <input type="text" size="96" name="word" value="" tabindex="14" />
+	<input type="radio" name="mode" value="and" /> and
+	<input type="radio" name="mode" value="or" /> or
+	</td>
+	<td><input type="submit" value="検索実行" tabindex="15" class="submit" /></td>
+</tr>
+</table>
+</div>
+</form>
+
+<hr class="cutoff" />
+
+<h2 class="head" id="pixeldata"><a href="#top" title="page top" class="mark">■</a> 解像度情報 [ pixel_view件以上 ]</h2>
+
+<div>
+<table border="1" cellpadding="3" cellspacing="0" summary="pixel data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="pixel">解像度</th>
+<th abbr="graph">グラフ</th>
+</tr>
+
+<!-- pixel_html -->
+
+</table>
+</div>
+
+<hr class="rule" />
+
+<h2 class="head" id="agentdata"><a href="#top" title="page top" class="mark">■</a> ブラウザ情報 [ agent_view件以上 ]</h2>
+
+<div>
+<table border="1" cellpadding="3" cellspacing="0" summary="agent data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="agent">ブラウザ</th>
+<th abbr="graph">グラフ</th>
+</tr>
+
+<!-- agent_html -->
+
+</table>
+</div>
+
+<hr class="rule" />
+
+<h2 class="head" id="osdata"><a href="#top" title="page top" class="mark">■</a> OS情報 [ os_view件以上 ]</h2>
+
+<div>
+<table border="1" cellpadding="3" cellspacing="0" summary="os data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="os">OS</th>
+<th abbr="graph">グラフ</th>
+</tr>
+
+<!-- os_html -->
+
+</table>
+</div>
+
+<hr class="rule" />
+
+<h2 class="head" id="hostdata"><a href="#top" title="page top" class="mark">■</a> ホスト（IPアドレス）情報 [ host_view件以上 ]</h2>
+
+<div>
+<table border="1" cellpadding="3" cellspacing="0" summary="host data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="host">ホスト（IP）</th>
+<th abbr="graph">グラフ</th>
+</tr>
+
+<!-- host_html -->
+
+</table>
+</div>
+
+<!-- list_end -->
+
+<!-- time_start -->
+
+<p id="notice">
+<em>site_data</em> へのアクセスは、これまでに <em>counter_data</em> 件ありました。<br />
+以下の解析データは、直近 <em>count_data</em> 件分 [ old_data ～ new_data ] です。<br />
+</p>
+
+<form action="cgi_data" method="post">
+<div>
+<input type="hidden" name="pass" value="master_pass" />
+<input type="hidden" name="logdir" value="logdir_data" />
+<input type="hidden" name="hour" value="hour" />
+<table border="1" cellpadding="5" cellspacing="2" summary="reload" id="reload">
+<tr>
+	<td><a href="#timedata" title="直近 3日分" tabindex="5">時間帯別アクセス情報（直近 3日分）</a></td>
+	<td><a href="#hourdata" title="時間帯別アクセス情報" tabindex="6">時間帯別アクセス情報</a></td>
+	<td><a href="#weekdata" title="曜日別アクセス情報" tabindex="7">曜日別アクセス情報</a></td>
+	<td><input type="submit" value="表示更新" tabindex="8" class="submit" /></td>
+</tr>
+<tr>
+	<td colspan="3">検索文字 <input type="text" size="96" name="word" value="" tabindex="9" />
+	<input type="radio" name="mode" value="and" /> and
+	<input type="radio" name="mode" value="or" /> or
+	</td>
+	<td><input type="submit" value="検索実行" tabindex="10" class="submit" /></td>
+</tr>
+</table>
+</div>
+</form>
+
+<hr class="cutoff" />
+
+<h2 class="head" id="timedata"><a href="#top" title="page top" class="mark">■</a> 時間帯別アクセス情報 [ dbyday_data ～ today_data ]</h2>
+
+<div class="timetop">
+<table border="1" cellpadding="2" cellspacing="0" summary="time data">
+
+<!-- today_html -->
+
+<tr class="timetr">
+<th abbr="count">件数</th>
+<th abbr="day">日付</th>
+<th abbr="hour">00</th>
+<th abbr="hour">01</th>
+<th abbr="hour">02</th>
+<th abbr="hour">03</th>
+<th abbr="hour">04</th>
+<th abbr="hour">05</th>
+<th abbr="hour">06</th>
+<th abbr="hour">07</th>
+<th abbr="hour">08</th>
+<th abbr="hour">09</th>
+<th abbr="hour">10</th>
+<th abbr="hour">11</th>
+<th abbr="hour">12</th>
+<th abbr="hour">13</th>
+<th abbr="hour">14</th>
+<th abbr="hour">15</th>
+<th abbr="hour">16</th>
+<th abbr="hour">17</th>
+<th abbr="hour">18</th>
+<th abbr="hour">19</th>
+<th abbr="hour">20</th>
+<th abbr="hour">21</th>
+<th abbr="hour">22</th>
+<th abbr="hour">23</th>
+</tr>
+
+<!-- yesterday_html -->
+
+<tr class="timetr">
+<th abbr="count">件数</th>
+<th abbr="week">日付</th>
+<th abbr="hour">00</th>
+<th abbr="hour">01</th>
+<th abbr="hour">02</th>
+<th abbr="hour">03</th>
+<th abbr="hour">04</th>
+<th abbr="hour">05</th>
+<th abbr="hour">06</th>
+<th abbr="hour">07</th>
+<th abbr="hour">08</th>
+<th abbr="hour">09</th>
+<th abbr="hour">10</th>
+<th abbr="hour">11</th>
+<th abbr="hour">12</th>
+<th abbr="hour">13</th>
+<th abbr="hour">14</th>
+<th abbr="hour">15</th>
+<th abbr="hour">16</th>
+<th abbr="hour">17</th>
+<th abbr="hour">18</th>
+<th abbr="hour">19</th>
+<th abbr="hour">20</th>
+<th abbr="hour">21</th>
+<th abbr="hour">22</th>
+<th abbr="hour">23</th>
+</tr>
+
+<!-- dbyday_html -->
+
+<tr class="timetr">
+<th abbr="count">件数</th>
+<th abbr="week">日付</th>
+<th abbr="hour">00</th>
+<th abbr="hour">01</th>
+<th abbr="hour">02</th>
+<th abbr="hour">03</th>
+<th abbr="hour">04</th>
+<th abbr="hour">05</th>
+<th abbr="hour">06</th>
+<th abbr="hour">07</th>
+<th abbr="hour">08</th>
+<th abbr="hour">09</th>
+<th abbr="hour">10</th>
+<th abbr="hour">11</th>
+<th abbr="hour">12</th>
+<th abbr="hour">13</th>
+<th abbr="hour">14</th>
+<th abbr="hour">15</th>
+<th abbr="hour">16</th>
+<th abbr="hour">17</th>
+<th abbr="hour">18</th>
+<th abbr="hour">19</th>
+<th abbr="hour">20</th>
+<th abbr="hour">21</th>
+<th abbr="hour">22</th>
+<th abbr="hour">23</th>
+</tr>
+
+</table>
+</div>
+
+<hr class="rule" />
+
+<h2 class="head" id="hourdata"><a href="#top" title="page top" class="mark">■</a> 時間帯別アクセス情報 [ count_data件 ]</h2>
+
+<div class="timetop">
+<table border="1" cellpadding="2" cellspacing="0" summary="time data">
+
+<tr class="timetr">
+<th abbr="count">件数</th>
+<th abbr="week">曜日</th>
+<th abbr="hour">00</th>
+<th abbr="hour">01</th>
+<th abbr="hour">02</th>
+<th abbr="hour">03</th>
+<th abbr="hour">04</th>
+<th abbr="hour">05</th>
+<th abbr="hour">06</th>
+<th abbr="hour">07</th>
+<th abbr="hour">08</th>
+<th abbr="hour">09</th>
+<th abbr="hour">10</th>
+<th abbr="hour">11</th>
+<th abbr="hour">12</th>
+<th abbr="hour">13</th>
+<th abbr="hour">14</th>
+<th abbr="hour">15</th>
+<th abbr="hour">16</th>
+<th abbr="hour">17</th>
+<th abbr="hour">18</th>
+<th abbr="hour">19</th>
+<th abbr="hour">20</th>
+<th abbr="hour">21</th>
+<th abbr="hour">22</th>
+<th abbr="hour">23</th>
+</tr>
+
+<!-- mon_html -->
+
+<!-- tue_html -->
+
+<!-- wed_html -->
+
+<!-- thu_html -->
+
+<!-- fri_html -->
+
+<!-- sat_html -->
+
+<!-- sun_html -->
+
+<tr class="timetr">
+<th abbr="count">件数</th>
+<th abbr="week">曜日</th>
+<th abbr="hour">00</th>
+<th abbr="hour">01</th>
+<th abbr="hour">02</th>
+<th abbr="hour">03</th>
+<th abbr="hour">04</th>
+<th abbr="hour">05</th>
+<th abbr="hour">06</th>
+<th abbr="hour">07</th>
+<th abbr="hour">08</th>
+<th abbr="hour">09</th>
+<th abbr="hour">10</th>
+<th abbr="hour">11</th>
+<th abbr="hour">12</th>
+<th abbr="hour">13</th>
+<th abbr="hour">14</th>
+<th abbr="hour">15</th>
+<th abbr="hour">16</th>
+<th abbr="hour">17</th>
+<th abbr="hour">18</th>
+<th abbr="hour">19</th>
+<th abbr="hour">20</th>
+<th abbr="hour">21</th>
+<th abbr="hour">22</th>
+<th abbr="hour">23</th>
+</tr>
+
+<!-- time_html -->
+
+<tr class="timetr">
+<th abbr="count">件数</th>
+<th abbr="week">曜日</th>
+<th abbr="hour">00</th>
+<th abbr="hour">01</th>
+<th abbr="hour">02</th>
+<th abbr="hour">03</th>
+<th abbr="hour">04</th>
+<th abbr="hour">05</th>
+<th abbr="hour">06</th>
+<th abbr="hour">07</th>
+<th abbr="hour">08</th>
+<th abbr="hour">09</th>
+<th abbr="hour">10</th>
+<th abbr="hour">11</th>
+<th abbr="hour">12</th>
+<th abbr="hour">13</th>
+<th abbr="hour">14</th>
+<th abbr="hour">15</th>
+<th abbr="hour">16</th>
+<th abbr="hour">17</th>
+<th abbr="hour">18</th>
+<th abbr="hour">19</th>
+<th abbr="hour">20</th>
+<th abbr="hour">21</th>
+<th abbr="hour">22</th>
+<th abbr="hour">23</th>
+</tr>
+
+</table>
+</div>
+
+<hr class="rule" />
+
+<h2 class="head" id="weekdata"><a href="#top" title="page top" class="mark">■</a> 曜日別アクセス情報 [ count_data件 ]</h2>
+
+<div>
+<table border="1" cellpadding="3" cellspacing="0" summary="wday data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="week">曜日</th>
+<th abbr="graph">グラフ</th>
+</tr>
+
+<!-- wday_html -->
+
+</table>
+</div>
+
+<!-- time_end -->
+
+<!-- data_start -->
+
+<p id="notice">
+以下は、<em>site_data</em> への日別アクセス情報及び月別アクセス情報です。<br />
+日別アクセス情報表示月を変更する場合は、年と月を入力して [ 表示更新 ] ボタンを押してください。<br />
+</p>
+
+<form action="cgi_data" method="post">
+<div>
+<input type="hidden" name="pass" value="master_pass" />
+<input type="hidden" name="logdir" value="logdir_data" />
+<table border="1" cellpadding="5" cellspacing="2" summary="reload" id="reload">
+<tr>
+	<td>
+	<a href="#daydata" title="日別アクセス情報" tabindex="5">日別アクセス情報</a>
+	<input type="text" name="years" size="5" value="years_data" tabindex="6" /> 年
+	<input type="text" name="mon" size="3" value="mon_data" tabindex="7" /> 月分
+	</td>
+	<td><a href="#monthdata" title="月別アクセス情報" tabindex="8">月別アクセス情報</a></td>
+	<td><input type="submit" name="data" value="表示更新" tabindex="9" class="submit" /></td>
+</tr>
+</table>
+</div>
+</form>
+
+<hr class="cutoff" />
+
+<h2 class="head" id="daydata"><a href="#top" title="page top" class="mark">■</a> 日別アクセス情報</h2>
+
+<div>
+<table border="1" cellpadding="3" cellspacing="0" summary="days data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="days">年月日</th>
+<th abbr="graph">グラフ</th>
+</tr>
+
+<!-- days_html -->
+
+</table>
+</div>
+
+<hr class="rule" />
+
+<h2 class="head" id="monthdata"><a href="#top" title="page top" class="mark">■</a> 月別アクセス情報</h2>
+
+<div>
+<table border="1" cellpadding="3" cellspacing="0" summary="month data">
+
+<tr>
+<th abbr="count">件数</th>
+<th abbr="month">月</th>
+<th abbr="graph">グラフ</th>
+</tr>
+
+<!-- month_html -->
+
+</table>
+</div>
+
+<!-- data_end -->
+
+<hr id="bottom" />
+
+<p id="copyright">
+<!-- copy_html -->
+</p>
+
+</body>
+</html>

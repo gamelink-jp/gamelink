@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<HTML lang="ja">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Script-Type" content="text/javascript">
+
+<title>サイト内検索</title>
+<LINK rel="stylesheet" href="css/basecss.css" type="text/css">
+</head>
+
+<body bgcolor="#f8fefc">
+
+<script type="text/javascript" src="javascript/windowtop.js"></script>
+
+<div class="sidebar"> <!---------------------------------- sidebar ---------------------------------->
+<iframe src="mokuji.html" title="目次" name="mokuji" width="200"  height="1000" seamless style="border:0;">
+目次
+</iframe>
+</div> <!---------------------------------- sidebar ---------------------------------->
+
+<div class="contents"> <!---------------------------------- contents ---------------------------------->
+
+<center>
+<font color="#008000" size="6"><strong>サイト内検索</strong></font>
+</center>
+
+<hr width="60%">
+
+<center>
+<a href="http://www.google.com/">
+<img border="0" src="http://www.google.co.jp/logos/Logo_50wht.gif" width="163" height="74" alt="google"></a><br>
+<form action="http://www.google.com/search">
+<input type="hidden" name="ie" value="Shift_JIS">
+<input type="hidden" value="www.gamelink.jp" name="as_sitesearch" />
+<input type="text" name="q" size="31" maxlength="256" value="" />
+<input type="submit" name="btnG" value="検索" />
+</form>
+</center>
+
+<hr width="60%">
+
+<center>
+<a href="JavaScript:history.go(-1);">戻る</a><br>
+<a href="http://www.gamelink.jp/main.html" target="main">index</a>
+</center>
+
+</CENTER>
+
+</div> <!---------------------------------- contents ---------------------------------->
+
+</body>
+</html>

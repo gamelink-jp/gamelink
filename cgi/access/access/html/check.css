@@ -1,0 +1,46 @@
+/* access cgi - replist.cgi 用 check.css */
+
+/* 以下 基本 */
+
+	body			{
+						color:#000000;
+						background-color:#eeeeee;
+						font-family:"MS UI Gothic",sans-serif;
+						font-size:10pt;
+						text-align:center;
+						margin:0;
+						margin-left:auto;
+						margin-right:auto;
+						padding:10px;
+					}
+	strong			{ font-size:16pt; }
+	em				{
+						font-size:12pt;
+						font-style:normal;
+						font-weight:bold;
+					}
+	form			{ margin:0; }
+
+/* 以下 div 用 */
+
+	div.main		{
+						color:#000000;
+						background-color:#ffffff;
+						text-align:center;
+						margin:30%;
+						margin-top:20%;
+						padding:10px;
+					}
+
+/* 以下 table 用 */
+
+	table			{
+						color:#000000;
+						background-color:#ffffff;
+						text-align:center;
+						margin-left:auto;
+						margin-right:auto;
+					}
+	table.check		{ margin-top:3%; }
+	table.version	{ margin-top:3%; }
+

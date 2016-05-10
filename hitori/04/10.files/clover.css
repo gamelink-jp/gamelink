@@ -1,0 +1,249 @@
+BODY {
+	COLOR: #000; BACKGROUND-COLOR: #fff
+}
+A:link {
+	COLOR: #3faf43; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #080; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+DIV.adminmenu {
+	MARGIN-TOP: 0px; TEXT-ALIGN: right
+}
+DIV.adminmenu {
+	PADDING-RIGHT: 0.5em; FONT-SIZE: 80%
+}
+H1 {
+	PADDING-RIGHT: 64px; BACKGROUND-POSITION: right bottom; BACKGROUND-IMAGE: url(clover_h1.png); PADDING-BOTTOM: 5px; COLOR: #3faf43; LINE-HEIGHT: 64px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 64px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: right
+}
+H1 IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: middle; BORDER-RIGHT-WIDTH: 0px
+}
+H2 {
+	BORDER-RIGHT: #3faf43 0px solid; BORDER-TOP: #3faf43 0px solid; FONT-SIZE: medium; BORDER-LEFT: #3faf43 0px solid; BORDER-BOTTOM: #3faf43 1px solid
+}
+DIV.day H2 {
+	BORDER-RIGHT: #3faf43 0px solid; BORDER-TOP: #3faf43 0px solid; PADDING-LEFT: 8px; FONT-SIZE: medium; PADDING-BOTTOM: 4px; BORDER-LEFT: #3faf43 0px solid; BORDER-BOTTOM: #3faf43 1px solid
+}
+DIV.body {
+	MARGIN-LEFT: 1em; LINE-HEIGHT: 120%
+}
+DIV.body H3 {
+	BORDER-RIGHT: #3faf43 0px dashed; PADDING-RIGHT: 4px; BORDER-TOP: #3faf43 0px dashed; MARGIN-TOP: 1.5em; PADDING-LEFT: 4px; FONT-SIZE: medium; MARGIN-BOTTOM: 0.5em; PADDING-BOTTOM: 4px; BORDER-LEFT: #3faf43 0px dashed; PADDING-TOP: 4px; BORDER-BOTTOM: #3faf43 1px dashed
+}
+DIV.day SPAN.sanchor {
+	PADDING-RIGHT: 16px; BACKGROUND-POSITION: right bottom; PADDING-LEFT: 0px; FONT-SIZE: 1px; BACKGROUND-IMAGE: url(clover_anchor.png); PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 16px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: transparent
+}
+DIV.day SPAN.canchor {
+	PADDING-RIGHT: 16px; BACKGROUND-POSITION: right bottom; PADDING-LEFT: 0px; FONT-SIZE: 1px; BACKGROUND-IMAGE: url(clover_anchor2.png); PADDING-BOTTOM: 0px; COLOR: #cfd; PADDING-TOP: 16px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: transparent
+}
+DIV.body P {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0.5em; MARGIN-LEFT: 1em; COLOR: #000; LINE-HEIGHT: 150%; BACKGROUND-COLOR: transparent
+}
+DIV.body PRE {
+	BORDER-RIGHT: #3faf43 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #3faf43 1px solid; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; MARGIN-LEFT: 2em; BORDER-LEFT: #3faf43 6px solid; COLOR: #000; PADDING-TOP: 8px; BORDER-BOTTOM: #3faf43 1px solid; BACKGROUND-COLOR: #cfd
+}
+DIV.body BLOCKQUOTE {
+	BORDER-RIGHT: #3faf43 0px solid; PADDING-RIGHT: 4px; BORDER-TOP: #3faf43 2px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN-LEFT: 3em; BORDER-LEFT: #3faf43 0px solid; COLOR: #000; MARGIN-RIGHT: 3em; PADDING-TOP: 4px; BORDER-BOTTOM: #3faf43 2px solid; BACKGROUND-COLOR: #cfd
+}
+DIV.body BLOCKQUOTE P {
+	MARGIN-LEFT: 0em
+}
+DIV.body LI {
+	MARGIN-LEFT: 2em
+}
+DIV.body DL {
+	MARGIN-LEFT: 2em
+}
+DIV.body DT {
+	BORDER-RIGHT: #cfd 0px solid; BORDER-TOP: #cfd 0px solid; MARGIN-TOP: 0.7em; BORDER-LEFT: #cfd 0px solid; BORDER-BOTTOM: #cfd 1px solid
+}
+DIV.body DD {
+	MARGIN-TOP: 0.3em; MARGIN-BOTTOM: 0.5em; MARGIN-LEFT: 2em
+}
+DIV.comment {
+	BORDER-RIGHT: #3faf43 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #3faf43 1px solid; MARGIN-TOP: 1em; PADDING-LEFT: 4px; FONT-SIZE: 90%; MARGIN-BOTTOM: 0.5em; PADDING-BOTTOM: 4px; MARGIN-LEFT: 2em; BORDER-LEFT: #3faf43 1px solid; COLOR: #000; PADDING-TOP: 4px; BORDER-BOTTOM: #3faf43 1px solid; BACKGROUND-COLOR: #cfd
+}
+DIV.form DIV.comment {
+	COLOR: #000; MARGIN-RIGHT: 1em; BACKGROUND-COLOR: #fff
+}
+DIV.comment P {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0.5em
+}
+DIV.comment P.commenttitle {
+	BORDER-RIGHT: #3faf43 0px dashed; BORDER-TOP: #3faf43 0px dashed; BORDER-LEFT: #3faf43 0px dashed; BORDER-BOTTOM: #3faf43 1px dashed
+}
+DIV.form {
+	BORDER-RIGHT: #3faf43 1px solid; BORDER-TOP: #3faf43 1px solid; BORDER-LEFT: #3faf43 1px solid; COLOR: #000; BORDER-BOTTOM: #3faf43 1px solid; BACKGROUND-COLOR: #cfd
+}
+DIV.day DIV.form {
+	MARGIN-TOP: 0px; FONT-SIZE: 90%; MARGIN-BOTTOM: 0.5em; MARGIN-LEFT: 2em
+}
+DIV.form FORM {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; MARGIN: 0px; PADDING-TOP: 4px
+}
+DIV.form P {
+	MARGIN-TOP: 0px; PADDING-LEFT: 4px; MARGIN-BOTTOM: 0.5em
+}
+DIV.form TEXTAREA {
+	MARGIN-LEFT: 2em
+}
+DIV.referer {
+	MARGIN-TOP: 0px; FONT-SIZE: 80%; TEXT-ALIGN: right
+}
+DIV.refererlist {
+	BORDER-RIGHT: #3faf43 1px solid; BORDER-TOP: #3faf43 1px solid; MARGIN-TOP: 0px; FONT-SIZE: 90%; MARGIN-BOTTOM: 0.5em; MARGIN-LEFT: 2em; BORDER-LEFT: #3faf43 1px solid; COLOR: #000; BORDER-BOTTOM: #3faf43 1px solid; BACKGROUND-COLOR: #cfd
+}
+DIV.refererlist UL {
+	MARGIN-LEFT: 2em
+}
+DIV.form DIV.refererlist {
+	COLOR: #000; MARGIN-RIGHT: 1em; BACKGROUND-COLOR: #fff
+}
+DIV.refererlist P {
+	PADDING-RIGHT: 4px; MARGIN-TOP: 0px; PADDING-LEFT: 4px; MARGIN-BOTTOM: 0em; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+DIV.refererlist UL {
+	PADDING-RIGHT: 4px; MARGIN-TOP: 0px; PADDING-LEFT: 4px; MARGIN-BOTTOM: 0em; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+HR {
+	MARGIN-TOP: 0.5em; COLOR: #3faf43; BACKGROUND-COLOR: transparent
+}
+HR.sep {
+	DISPLAY: none
+}
+DIV.footer {
+	FONT-SIZE: 80%; TEXT-ALIGN: right
+}
+FORM DIV.body {
+	BORDER-RIGHT: #3faf43 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #3faf43 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #3faf43 1px solid; COLOR: #000; PADDING-TOP: 0px; BORDER-BOTTOM: #3faf43 1px solid; BACKGROUND-COLOR: #cfd
+}
+DIV.calendar {
+	FONT-SIZE: 80%; COLOR: #000; BACKGROUND-COLOR: #fff; TEXT-ALIGN: right
+}
+TABLE.calendar {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 80%; BORDER-BOTTOM-WIDTH: 0px; LINE-HEIGHT: 100%; BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.calendar TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+TABLE.calendar TD.calendar-prev-month {
+	TEXT-ALIGN: center
+}
+TABLE.calendar TD.calendar-current-month {
+	TEXT-ALIGN: center
+}
+TABLE.calendar TD.calendar-next-month {
+	TEXT-ALIGN: center
+}
+P.recentitem {
+	MARGIN-TOP: 0px; FONT-SIZE: 80%; MARGIN-BOTTOM: 0px
+}
+DIV.recentsubtitles {
+	MARGIN-TOP: 0px; FONT-SIZE: 80%; MARGIN-BOTTOM: 1em; MARGIN-LEFT: 1em
+}
+DIV.body SPAN.footnote {
+	FONT-SIZE: 80%; VERTICAL-ALIGN: super
+}
+DIV.footnote {
+	BORDER-RIGHT: #3faf43 0px solid; BORDER-TOP: #3faf43 1px solid; FONT-SIZE: 90%; MARGIN-LEFT: 3em; BORDER-LEFT: #3faf43 0px solid; BORDER-BOTTOM: #3faf43 0px solid
+}
+IMG.left {
+	BORDER-TOP-WIDTH: 1px; MARGIN-TOP: 0.5em; BORDER-LEFT-WIDTH: 1px; BORDER-LEFT-COLOR: #3faf43; FLOAT: left; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #3faf43; BORDER-TOP-COLOR: #3faf43; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #3faf43
+}
+IMG.right {
+	BORDER-TOP-WIDTH: 1px; MARGIN-TOP: 0.5em; BORDER-LEFT-WIDTH: 1px; BORDER-LEFT-COLOR: #3faf43; FLOAT: right; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #3faf43; BORDER-TOP-COLOR: #3faf43; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #3faf43
+}
+IMG.photo {
+	BORDER-TOP-WIDTH: 1px; MARGIN-TOP: 0.5em; BORDER-LEFT-WIDTH: 1px; BORDER-LEFT-COLOR: #3faf43; FLOAT: right; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #3faf43; BORDER-TOP-COLOR: #3faf43; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #3faf43
+}
+IMG.amazon {
+	BORDER-TOP-WIDTH: 1px; MARGIN-TOP: 0.5em; BORDER-LEFT-WIDTH: 1px; BORDER-LEFT-COLOR: #3faf43; FLOAT: right; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #3faf43; BORDER-TOP-COLOR: #3faf43; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #3faf43
+}
+DIV.section {
+	CLEAR: both
+}
+DIV.main {
+	MARGIN-LEFT: 20%
+}
+DIV.sidebar {
+	BORDER-RIGHT: #3faf43 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #3faf43 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 80%; LEFT: 0px; PADDING-BOTTOM: 100%; BORDER-LEFT: #3faf43 1px solid; WIDTH: 20%; COLOR: #000; PADDING-TOP: 2px; BORDER-BOTTOM: #3faf43 1px solid; POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #cfd
+}
+DIV.sidebar P {
+	BORDER-RIGHT: #3faf43 0px solid; BORDER-TOP: #3faf43 0px solid; MARGIN: 2px 4px; BORDER-LEFT: #3faf43 0px solid; LINE-HEIGHT: 120%; BORDER-BOTTOM: #3faf43 1px solid; TEXT-ALIGN: center
+}
+DIV.commentshort {
+	FONT-SIZE: 90%; MARGIN-LEFT: 0.5em
+}
+SPAN.commentator {
+	FONT-WEIGHT: bold
+}
+DIV.commentshort P {
+	MARGIN-TOP: 0.5em; MARGIN-BOTTOM: 0.2em; LINE-HEIGHT: 1.2em
+}
+DIV.commentbody {
+	FONT-SIZE: 90%; MARGIN: 0.5em; LINE-HEIGHT: 1.2em
+}
+DIV.commentator {
+	LINE-HEIGHT: 1.5em
+}
+DIV.commentbody P {
+	MARGIN: 0.5em 0.5em 0.5em 2em
+}
+DIV.form FORM {
+	MARGIN: 0em 0em 0em 2em
+}
+DIV.form DIV.caption {
+	FONT-SIZE: 90%; MARGIN: 0.5em
+}
+DIV.form FORM.comment {
+	FONT-SIZE: 90%
+}
+DIV.field {
+	DISPLAY: inline; MARGIN-RIGHT: 2em
+}
+FORM.comment INPUT {
+	MARGIN-LEFT: 1em
+}
+DIV.textarea {
+	DISPLAY: block; VERTICAL-ALIGN: top
+}
+FORM.comment TEXTAREA {
+	DISPLAY: block; MARGIN-LEFT: 3em; WIDTH: 30em; HEIGHT: 5em
+}
+DIV.button {
+	DISPLAY: block; MARGIN-LEFT: 3em
+}
+FORM.update {
+	PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+}
+FORM.update INPUT {
+	
+}
+FORM.update TEXTAREA {
+	
+}
+FORM.commentstat INPUT {
+	
+}
+FORM.update SPAN.field {
+	DISPLAY: inline; MARGIN-LEFT: 0em; MARGIN-RIGHT: 0.5em
+}
+FORM.update DIV.title {
+	MARGIN-TOP: 1em; DISPLAY: block
+}
+FORM.update DIV.title INPUT {
+	MARGIN-LEFT: 0.5em
+}
+FORM.update DIV.textarea {
+	MARGIN-TOP: 1em; DISPLAY: block
+}
+FORM.update TEXTAREA {
+	DISPLAY: block; MARGIN-BOTTOM: 1em; MARGIN-LEFT: 3em; WIDTH: 35em; HEIGHT: 15em
+}
+FORM.update SPAN.hidediary {
+	MARGIN-LEFT: 1em
+}
+DIV.comment FORM {
+	MARGIN-TOP: 0em
+}

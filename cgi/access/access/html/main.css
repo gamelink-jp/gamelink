@@ -1,0 +1,120 @@
+/* access cgi - main.html 用 main.css */
+
+/* 以下 基本 */
+
+	body			{
+						color:#000000;
+						background-color:#ffffff;
+						font-family:"MS UI Gothic",sans-serif;
+						font-size:10pt;
+						text-align:left;
+						margin:0;
+						padding:10px;
+					}
+	a:link			{ color:#0000ff; }
+	a:visited		{ color:#800080; }
+	a:active		{ color:#ff0000; }
+	a:hover			{ color:#ff0000; text-decoration:none; }
+	hr				{ color:#000000; margin:0; }
+	hr.cutoff		{ height:1px; }
+	hr.rule			{ visibility:hidden; }
+	hr.split		{ display:none; }
+	em				{ font-style:normal; font-weight:bold; }
+	form			{ margin:0; }
+
+/* 以下 hr 用 */
+
+	hr#top			{ height:1px; margin-bottom:5px; }
+	hr#bottom		{ height:1px; margin-top:10px; }
+
+/* 以下 table 用 */
+
+	table			{ border-style:none; }
+	th				{
+						font-size:10pt;
+						padding-right:8px;
+						border-style:none;
+					}
+	td				{ padding-right:8px; border-style:none; }
+
+	td#return		{
+						font-size:10pt;
+						white-space:nowrap;
+						padding:0.5em;
+					}
+
+	table#reload	{ font-size:10pt; white-space:nowrap; }
+	table#reload td { background-color:#e9e9e9; }
+
+	tr.timetr		{ background-color:#f0f0f0; }
+	tr.timetr th	{ color:#008040; font-weight:normal; }
+	tr.listtable	{ font-size:10pt; }
+
+/* 以下 form 用 */
+
+	input.select	{
+						background-color:#ffffff;
+						font-family:"MS UI Gothic",sans-serif;
+						font-size:10pt;
+						padding:2px;
+					}
+	input.submit	{
+						background-color:#ffffff;
+						font-family:"MS UI Gothic",sans-serif;
+						font-size:10pt;
+					}
+
+/* 以下 h 用 */
+
+	h1				{
+						color:#008040;
+						font-size:18pt;
+						text-indent:0.5em;
+					}
+
+	h2.head			{
+						background-color:#dcdcdc;
+						font-size:10pt;
+						font-weight:normal;
+						margin:0;
+						padding:5px;
+					}
+
+/* 以下 a 用 */
+
+	table#reload a:link		{ text-decoration:none; }
+	table#reload a:visited	{ text-decoration:none; }
+	table#reload a:active	{ text-decoration:none; }
+	table#reload a:hover	{ text-decoration:underline; }
+
+	a:link.mark		{ text-decoration:none; }
+	a:visited.mark	{ text-decoration:none; }
+	a:active.mark	{ text-decoration:none; }
+	a:hover.mark	{ text-decoration:underline; }
+
+	a:link.reptitle		{ text-decoration:none; }
+	a:visited.reptitle	{ text-decoration:none; }
+	a:active.reptitle	{ text-decoration:none; }
+	a:hover.reptitle	{ text-decoration:underline; }
+
+/* 以下 data 用 */
+
+	.item			{ color:#008040; }
+	.document		{ color:#808080; font-size:8pt; padding-left:1em; }
+	.addr			{ color:#808080; }
+	.hourcount		{ font-weight:bold; }
+
+/* 以下 div 用 */
+
+	div#convert		{
+						background-color:#e9e9e9;
+						margin-top:10px;
+						padding:5px;
+					}
+	div.timetop		{ margin-top:1.5em; }
+
+/* 以下 p 用 */
+
+	p#notice		{ padding-left:1em; }
+	p#copyright		{ text-align:right; margin:0; }
+

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>ゲーム会社(目次)</title>
+<LINK rel="stylesheet" href="css/basecss.css" type="text/css">
+
+<script type="text/javascript">
+<!--//Copyright (C) WEST MiRa http://member.nifty.ne.jp/marsh/misya/
+
+	taihi=new Array();
+	function hyouji(doko){
+	if(document.layers)
+		{kazu=document.layers.length/2;
+		lay_name=document.layers["lay"+doko];
+		tit_name=document.layers["title"+doko];
+		if(lay_name.visibility == 'show')
+			{lay_name.visibility='hidden';
+			dotti=1;
+			 }
+		 else {lay_name.visibility='show';
+			tate=tit_name.pageY+tit_name.clip.height;
+			yoko=tit_name.pageX;
+			lay_name.top=tate;
+			lay_name.left=yoko;
+			dotti=0;
+			}
+
+		if(doko<kazu-1)
+			{
+			for(i=doko+1; i<kazu; i++){
+				tate=document.layers["lay"+doko].clip.height;
+				if(dotti == 1)
+					document.layers["title"+i].moveBy(0,-tate);
+				else 
+					document.layers["title"+i].moveBy(0,tate);
+				if(document.layers["lay"+i].visibility=='show')
+					{
+					if(dotti == 1)
+						document.layers["lay"+i].moveBy(0,-tate);
+					else 
+						document.layers["lay"+i].moveBy(0,tate);
+					}
+				}
+			}
+		}
+	else if((document.getElementById) && (!document.all))
+		{
+		lay_name=document.getElementById("lay"+doko);
+		if(lay_name.style.visibility == 'visible')
+			{lay_name.style.visibility='hidden';
+			lay_name.style.display="none";
+			}
+		 else {lay_name.style.visibility='visible';
+				lay_name.style.display="block";
+			}
+		}
+	else if(document.all)
+		{
+		lay_name=document.all("lay"+doko);
+		if(lay_name.style.visibility == 'visible')
+			{lay_name.style.visibility='hidden';
+			 lay_name.style.display="none";
+			 if(navigator.appVersion.indexOf("MSIE 4.")!=-1)
+				lay_name.innerHTML=taihi[doko];
+			}
+		 else {lay_name.style.visibility='visible';
+		       lay_name.style.display="block";
+			taihi[doko]=lay_name.innerHTML;
+		       if(navigator.appVersion.indexOf("MSIE 4.")!=-1)
+				lay_name.innerHTML="<br>"+taihi[doko];
+			}
+		}
+	}
+
+	if(document.layers)
+		{document.write('<style type="text/css">span{position:absolute;visibility:hidden;}<\/style>');}
+	else if((document.getElementById) && (!document.all))
+		{document.write('<style type="text/css">span{position:relative;display:none;}<\/style>');}
+	else if(document.all)
+		{document.write('<style type="text/css">span{position:relative;display:none;}<\/style>');}
+
+//-->
+</script>
+
+</head>
+
+<body>
+
+<p class="center"><A class="note" href="index.html" target="_top">トップ</A></p>
+
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:30px;"></td>
+ <TD style="width:5px;"></td>
+ <TD style="width:30px;font-size:x-small;">バナー有り</td>
+</TR>
+</TBODY></TABLE>
+
+<div id="title0" style="position:relative;visibility:visible;">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35px"><a href="javascript:hyouji(0);" title="hyouji0" style="font-size:small">▼</a> <a href="aa.html" title="aa" target="_top">あ</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><A href="banner/aa.html" title="b_aa" target="_top">あ</a></td>
+</TR>
+</TBODY></TABLE>
+</div>
+<span id="lay0">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+<TD style="width:35px;font-size:small">
+├ <a href="aa.html#a" title="nobanner" target="_top">あ</a><br>
+├ <a href="aa.html#i" title="nobanner" target="_top">い</a><br>
+├ <a href="aa.html#u" title="nobanner" target="_top">う</a><br>
+├ <a href="aa.html#e" title="nobanner" target="_top">え</a><br>
+└ <a href="aa.html#o" title="nobanner" target="_top">お</a>
+</td>
+<TD style="width:5px"></td>
+<TD style="width:30px;font-size:small" class="center">
+<a href="banner/aa.html#a" title="banner" target="_top">あ</a><br>
+<a href="banner/aa.html#i" title="banner" target="_top">い</a><br>
+<a href="banner/aa.html#u" title="banner" target="_top">う</a><br>
+<a href="banner/aa.html#e" title="banner" target="_top">え</a><br>
+<a href="banner/aa.html#o" title="banner" target="_top">お</a>
+</td>
+</TR>
+</TBODY></TABLE>
+</span>
+
+<div id="title1" style="position:relative;visibility:visible;">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35px"><a href="javascript:hyouji(1);" title="hyouji1" style="font-size:small">▼</a> <a href="ka.html" title="ka" target="_top">か</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><a href="banner/ka.html" title="b_ka" target="_top">か</a></td>
+</TR>
+</TBODY></TABLE>
+</div>
+<span id="lay1">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+<TD style="width:35px;font-size:small">
+├ <a href="ka.html#a" title="nobanner" target="_top">か</a><br>
+├ <a href="ka.html#i" title="nobanner" target="_top">き</a><br>
+├ <a href="ka.html#u" title="nobanner" target="_top">く</a><br>
+├ <a href="ka.html#e" title="nobanner" target="_top">け</a><br>
+└ <a href="ka.html#o" title="nobanner" target="_top">こ</a>
+</td>
+<TD style="width:5px"></td>
+<TD style="width:30px;font-size:small" class="center">
+<a href="banner/ka.html#a" title="banner" target="_top">か</a><br>
+<a href="banner/ka.html#i" title="banner" target="_top">き</a><br>
+<a href="banner/ka.html#u" title="banner" target="_top">く</a><br>
+<a href="banner/ka.html#e" title="banner" target="_top">け</a><br>
+<a href="banner/ka.html#o" title="banner" target="_top">こ</a>
+</td>
+</TR>
+</TBODY></TABLE>
+</span>
+
+<div id="title2" style="position:relative;visibility:visible;">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35"><a href="javascript:hyouji(2);" title="hyouji2" style="font-size:small">▼</a> <a href="sa.html" title="sa" target="_top">さ</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><a href="banner/sa.html" title="b_sa" target="_top">さ</a></td>
+</TR>
+</TBODY></TABLE>
+</div>
+<span id="lay2">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+<TD style="width:35px;font-size:small">
+├ <a href="sa.html#a" title="nobanner" target="_top">さ</a><br>
+├ <a href="sa.html#i" title="nobanner" target="_top">し</a><br>
+├ <a href="sa.html#u" title="nobanner" target="_top">す</a><br>
+├ <a href="sa.html#e" title="nobanner" target="_top">せ</a><br>
+└ <a href="sa.html#o" title="nobanner" target="_top">そ</a>
+</td>
+<TD style="width:5px"></td>
+<TD style="width:30px;font-size:small" class="center">
+<a href="banner/sa.html#a" title="banner" target="_top">さ</a><br>
+<a href="banner/sa.html#i" title="banner" target="_top">し</a><br>
+<a href="banner/sa.html#u" title="banner" target="_top">す</a><br>
+<a href="banner/sa.html#e" title="banner" target="_top">せ</a><br>
+<a href="banner/sa.html#o" title="banner" target="_top">そ</a>
+</td>
+</TR>
+</TBODY></TABLE>
+</span>
+
+<div id="title3" style="position:relative;visibility:visible;">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35px"><a href="javascript:hyouji(3);" title="hyouji3" style="font-size:small">▼</a> <a href="ta.html" title="ta" target="_top">た</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><a href="banner/ta.html" title="b_ta" target="_top">た</a></td>
+</TR>
+</TBODY></TABLE>
+</div>
+<span id="lay3">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+<TD style="width:35px;font-size:small">
+├ <a href="ta.html#a" title="nobanner" target="_top">た</a><br>
+├ <a href="ta.html#i" title="nobanner" target="_top">ち</a><br>
+├ <a href="ta.html#u" title="nobanner" target="_top">つ</a><br>
+├ <a href="ta.html#e" title="nobanner" target="_top">て</a><br>
+└ <a href="ta.html#o" title="nobanner" target="_top">と</a>
+</td>
+<TD style="width:5px"></td>
+<TD style="width:30px;font-size:small" class="center">
+<a href="banner/ta.html#a" title="banner" target="_top">た</a><br>
+<a href="banner/ta.html#i" title="banner" target="_top">ち</a><br>
+<a href="banner/ta.html#u" title="banner" target="_top">つ</a><br>
+<a href="banner/ta.html#e" title="banner" target="_top">て</a><br>
+<a href="banner/ta.html#o" title="banner" target="_top">と</a>
+</td>
+</TR>
+</TBODY></TABLE>
+</span>
+
+<div id="title4" style="position:relative;visibility:visible;">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35px"><a href="javascript:hyouji(4);" title="hyouji4" style="font-size:small">▼</a> <a href="na.html" title="na" target="_top">な</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><a href="banner/na.html" title="b_na" target="_top">な</a></td>
+</TR>
+</TBODY></TABLE>
+</div>
+<span id="lay4">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+<TD style="width:35px;font-size:small">
+├ <a href="na.html#a" title="nobanner" target="_top">な</a><br>
+├ <a href="na.html#i" title="nobanner" target="_top">に</a><br>
+├ <a href="na.html#u" title="nobanner" target="_top">ぬ</a><br>
+├ <a href="na.html#e" title="nobanner" target="_top">ね</a><br>
+└ <a href="na.html#o" title="nobanner" target="_top">の</a>
+</td>
+<TD style="width:5px"></td>
+<TD style="width:30px;font-size:small" class="center">
+<a href="banner/na.html#a" title="banner" target="_top">な</a><br>
+<a href="banner/na.html#i" title="banner" target="_top">に</a><br>
+<a href="banner/na.html#u" title="banner" target="_top">ぬ</a><br>
+<a href="banner/na.html#e" title="banner" target="_top">ね</a><br>
+<a href="banner/na.html#o" title="banner" target="_top">の</a>
+</td>
+</TR>
+</TBODY></TABLE>
+</span>
+
+<div id="title5" style="position:relative;visibility:visible;">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35px"><a href="javascript:hyouji(5);" title="hyouji5" style="font-size:small">▼</a> <a href="ha.html" title="ha" target="_top">は</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><a href="banner/ha.html" title="b_ha" target="_top">は</a></td>
+</TR>
+</TBODY></TABLE>
+</div>
+<span id="lay5">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+<TD style="width:35px;font-size:small">
+├ <a href="ha.html#a" title="nobanner" target="_top">は</a><br>
+├ <a href="ha.html#i" title="nobanner" target="_top">ひ</a><br>
+├ <a href="ha.html#u" title="nobanner" target="_top">ふ</a><br>
+├ <a href="ha.html#e" title="nobanner" target="_top">へ</a><br>
+└ <a href="ha.html#o" title="nobanner" target="_top">ほ</a>
+</td>
+<TD style="width:5px"></td>
+<TD style="width:30px;font-size:small" class="center">
+<a href="banner/ha.html#a" title="banner" target="_top">は</a><br>
+<a href="banner/ha.html#i" title="banner" target="_top">ひ</a><br>
+<a href="banner/ha.html#u" title="banner" target="_top">ふ</a><br>
+<a href="banner/ha.html#e" title="banner" target="_top">へ</a><br>
+<a href="banner/ha.html#o" title="banner" target="_top">ほ</a>
+</td>
+</TR>
+</TBODY></TABLE>
+</span>
+
+<div id="title6" style="position:relative;visibility:visible;">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35px"><a href="javascript:hyouji(6);" title="hyouji6" style="font-size:small">▼</a> <a href="ma.html" title="ma" target="_top">ま</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><a href="banner/ma.html" title="b_ma" target="_top">ま</a></td>
+</TR>
+</TBODY></TABLE>
+</div>
+<span id="lay6">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+<TD style="width:35px;font-size:small">
+├ <a href="ma.html#a" title="nobanner" target="_top">ま</a><br>
+├ <a href="ma.html#i" title="nobanner" target="_top">み</a><br>
+├ <a href="ma.html#u" title="nobanner" target="_top">む</a><br>
+├ <a href="ma.html#e" title="nobanner" target="_top">め</a><br>
+└ <a href="ma.html#o" title="nobanner" target="_top">も</a>
+</td>
+<TD style="width:5px"></td>
+<TD style="width:30px;font-size:small" class="center">
+<a href="banner/ma.html#a" title="banner" target="_top">ま</a><br>
+<a href="banner/ma.html#i" title="banner" target="_top">み</a><br>
+<a href="banner/ma.html#u" title="banner" target="_top">む</a><br>
+<a href="banner/ma.html#e" title="banner" target="_top">め</a><br>
+<a href="banner/ma.html#o" title="banner" target="_top">も</a>
+</td>
+</TR>
+</TBODY></TABLE>
+</span>
+
+<div id="title7" style="position:relative;visibility:visible;">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35px"><a href="javascript:hyouji(7);" title="hyouji7" style="font-size:small">▼</a> <a href="ya.html" title="ya" target="_top">や</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><a href="banner/ya.html" title="b_ya" target="_top">や</a></td>
+</TR>
+</TBODY></TABLE>
+</div>
+<span id="lay7">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+<TD style="width:35px;font-size:small">
+├ <a href="ya.html#a" title="nobanner" target="_top">や</a><br>
+├ <a href="ya.html#u" title="nobanner" target="_top">ゆ</a><br>
+└ <a href="ya.html#o" title="nobanner" target="_top">よ</a>
+</td>
+<TD style="width:5px"></td>
+<TD style="width:30px;font-size:small" class="center">
+<a href="banner/ya.html#a" title="banner" target="_top">や</a><br>
+<a href="banner/ya.html#u" title="banner" target="_top">ゆ</a><br>
+<a href="banner/ya.html#o" title="banner" target="_top">よ</a>
+</td>
+</TR>
+</TBODY></TABLE>
+</span>
+
+<div id="title8" style="position:relative;visibility:visible;">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35px"><a href="javascript:hyouji(8);" title="hyouji8" style="font-size:small">▼</a> <a href="ra.html" title="ra" target="_top">ら</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><a href="banner/ra.html" title="b_ra" target="_top">ら</a></td>
+</TR>
+</TBODY></TABLE>
+</div>
+<span id="lay8">
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+<TD style="width:35px;font-size:small">
+├ <a href="ra.html#a" title="nobanner" target="_top">ら</a><br>
+├ <a href="ra.html#i" title="nobanner" target="_top">り</a><br>
+├ <a href="ra.html#u" title="nobanner" target="_top">る</a><br>
+├ <a href="ra.html#e" title="nobanner" target="_top">れ</a><br>
+└ <a href="ra.html#o" title="nobanner" target="_top">ろ</a>
+</td>
+<TD style="width:5px"></td>
+<TD style="width:30px;font-size:small" class="center">
+<a href="banner/ra.html#a" title="banner" target="_top">ら</a><br>
+<a href="banner/ra.html#i" title="banner" target="_top">り</a><br>
+<a href="banner/ra.html#u" title="banner" target="_top">る</a><br>
+<a href="banner/ra.html#e" title="banner" target="_top">れ</a><br>
+<a href="banner/ra.html#o" title="banner" target="_top">ろ</a>
+</td>
+</TR>
+</TBODY></TABLE>
+</span>
+
+<TABLE style="margin-left:auto; margin-right:auto;"><TBODY>
+<TR>
+ <TD style="width:35px;font-size:small">▼ <a href="wa.html" title="wa" target="_top" style="font-size:medium;">わ</a></td>
+ <TD style="width:5px"></td>
+ <TD style="width:30px;font-size:small" class="center"><a href="banner/wa.html" title="b_wa" target="_top">わ</a></td>
+</TR>
+</TBODY></TABLE>
+
+<P class="center" style="font-size:small">
+<a href="school.html" TARGET="_top">スクール</a><BR>
+<A href="schoolb.html" title="schoolb" target="_top" style="font-size:x-small">(バナー有り)</A><br>
+<a href="link.html" TARGET="_top">相互</a><BR>
+<A href="linkb.html" title="linkb" target="_top" style="font-size:x-small">(バナー有り)</A>
+</P>
+
+<p class="center" style="font-size:small">
+<a href="http://www.amazon.co.jp/exec/obidos/redirect?tag=gamelink0a-22&amp;path=tg/browse/-/637394" 
+target="amazon"><b>一般ソフト販売</b></a><br>
+<a href="http://www.amazon.co.jp/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.co.jp%2Fgp%2Fbestsellers%2Fvideogames&amp;tag=gamelink0a-22&amp;linkCode=ur2&amp;camp=247&amp;creative=1211" target="amazon">(ランキング)</a><br>
+<a target="_blank" href="http://www.amazon.co.jp/%E3%82%A2%E3%83%80%E3%83%AB%E3%83%88-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/b/?_encoding=UTF8&amp;camp=247&amp;creative=7399&amp;linkCode=ur2&amp;node=927712&amp;tag=gamelink0a-22"><b>アダルトソフト販売</b></a><br>
+<a href="http://www.amazon.co.jp/gp/redirect.html?ie=UTF8&amp;location=http%3A%2F%2Fwww.amazon.co.jp%2Fgp%2Fbestsellers%2Fsoftware%2F927712&amp;tag=gamelink0a-22&amp;linkCode=ur2&amp;camp=247&amp;creative=1211" target="amazon">(ランキング)</a><br>
+</p>
+
+<P class="center" style="font-size:small">
+<a href="http://www.gamelink.jp/cgi/addgamelink/" target="_top">リンク追加</a><br>
+<a href="koushin/15.html" TARGET="_top">更新履歴</a><br>
+<a href="http://www3.rocketbbs.com/601/yoichi.html" TARGET="_top">掲示板</a><br>
+<a href="search.html" target="_top">サイト内検索</a><br>
+<A href="mailto:inf&#111;&#64;g&#97;me&#108;i&#110;&#107;&#46;jp">メール</a><br>
+</p>
+
+<P class="center" style="font-size:small"><a href="hitori/pro.html" TARGET="_top">管理者</a></P>
+
+</body>
+</html>
